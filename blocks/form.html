@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <link href='../images/favicon.ico' rel='icon' type='image/x-icon'/>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Form</title>
+        <meta name="description" content="form">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/development/other/normalize.css">
+        <link rel="stylesheet" href="../css/development/other/fonts.css">
+        <link rel="stylesheet" href="../css/development/sections/form.css">
+    </head>
+    <body>
+       <article class="rightColumn__form">
+          <form action="../php/receive.php" method="post" class="rightColumn__formAction">       
+          <div class = "rightColumn__formContent">
+             <div class = "rightColumn__formContent_contacts">
+                <h1 class="rightColumn__formText_h1">Contacts</h1>
+                <div class="rightColumn__formInputContacts_mail">
+                   <input type="text" name="email1" value="Hello@me.com" id="Hello" class="rightColumn__formContent_inputContacts_mailHello">
+                   <input type="text" name="email2" value="Andy@me.com" id="Andy" class="rightColumn__formContent_inputContacts_mailAndy">
+                   <div class="rightColumn__formInputContacts_mailButton" onclick = "ClearEmail();">
+                      <div class="rightColumn__formInputContacts_mailButton_rectangleH">
+                      </div>
+                      <div class="rightColumn__formInputContacts_mailButton_rectangleV">
+                      </div>
+                      <script src="../js/click.js">
+                      </script>
+                   </div>
+                </div>
+                <div class = "rightColumn__formContent_subjects">
+                   <h1 class="rightColumn__formText_h1">Subject</h1> 
+                   <textarea name="sbj" class="rightColumn__formContent_inputSubject">You can add a subject</textarea>
+                </div>
+                <div class = "rightColumn__formContent_message">
+                   <h1 class="rightColumn__formText_h1">Message</h1> 
+                   <textarea name="msg" class="rightColumn__formContent_inputMessage">Leave your massage here</textarea>
+                </div>  
+             </div>
+          </div>   
+          <div class="rightColumn__formSubmit">
+             <div class="rightColumn__formSubmit_inside">
+                <div class="rightColumn__formSubmit_insideCheckboxSaveacopy">
+                   <input type="checkbox" name="Save_a_copy" id="Save_a_copy" checked>
+                   <label for="Save_a_copy" class="rightColumn__formSubmit_insideCheckboxSaveaCopy_labelSaveaCopy">
+                      <span>
+                      </span>
+                   </label>
+                   <h1 class="rightColumn__formText_h1">Save a copy</h1>
+                </div>
+                <input class="rightColumn__formSubmit_insideButton_sendMail" type="submit" value="     Send Mail">
+             </div>
+             <div class="rightColumn__formWrapperPlaybtn">
+                <div class="rightColumn__formCirclePlaybtn">
+                   <div class="rightColumn__formTriangleRightPlaybtn">
+                   </div>
+                </div>
+             </div>
+          </div>
+          </form>
+       </article>
+    </body>
+</html>

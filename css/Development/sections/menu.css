@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+   
+.leftColumn__menu {
+    background: white;
+    width: 631px;
+    height: 65px;
+    border-radius: 5px;
+    position: relative;
+}
+.leftColumn__menu_checkIn,
+.leftColumn__menu_events,
+.leftColumn__menu_account,
+.leftColumn__menu_settings {
+    width: 157px;
+    height: 65px;
+    position: absolute;
+    border-right: 1px solid #F6F0EC;
+    cursor: pointer;
+}
+.leftColumn__menu_checkIn:hover,
+.leftColumn__menu_events:hover,
+.leftColumn__menu_account:hover,
+.leftColumn__menu_settings:hover {
+    width: 157px;
+    height: 62px;
+    position: absolute;
+    border-right: 1px solid #F6F0EC;
+    background: #F8F3F0;
+    border-bottom: 3px solid rgb(77, 175, 123);
+}
+.leftColumn__menu_checkIn:hover {
+    border-top-left-radius: 5px;
+}
+.leftColumn__menu_textCheckIn,
+.leftColumn__menu_textEvents,
+.leftColumn__menu_textAccount,
+.leftColumn__menu_textSettings {
+    color: #8E8071;
+    font-size: 1.063em;
+    position: absolute;
+    font-family: "OpenSansBold";
+    left: 55px;
+    top: 21px;
+    letter-spacing: -0.8px;
+}   
+.leftColumn__menu_iconCheckIn {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    left: 21px;
+    top: 18px;
+    background: url(../../../images/sprite.png) -40px 0px;
+}  
+.leftColumn__menu_iconRoundCheckIn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 14px;
+    top: 11px;
+    background: url(../../../images/sprite.png) -98px 90px;
+}  
+.leftColumn__menu_textUnderCheckIn,
+.leftColumn__menu_textUnderEvents,
+.leftColumn__menu_textUnderAccount,
+.leftColumn__menu_textUnderSettings {
+    display: none;
+    width: 157px;
+    height: 200px;
+    top: 65px;
+    position: absolute;
+    background: #F8F3F0;
+    font-size: 0.563em;
+    text-align: center;
+    color: #cd7f32;
+}
+.leftColumn__menu_checkIn:hover .leftColumn__menu_textUnderCheckIn,
+.leftColumn__menu_events:hover .leftColumn__menu_textUnderEvents,
+.leftColumn__menu_account:hover .leftColumn__menu_textUnderAccount,
+.leftColumn__menu_settings:hover .leftColumn__menu_textUnderSettings {
+    display: block;
+}
+.leftColumn__menu_events {
+    left: 158px;
+}
+.leftColumn__menu_events:hover {
+    left: 158px;
+}
+.leftColumn__menu_iconEvents {
+    width:30px;
+    height:30px;
+    position:absolute;
+    left:18px;
+    top:18px;
+    background:url(../../../images/sprite.png) 30px -30px;
+}
+.leftColumn__menu_account {
+    left: 316px;
+}
+.leftColumn__menu_account:hover {
+    left: 316px;
+}
+.leftColumn__menu_iconAccount {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 14px;
+    top: 18px;
+    background: url(../../../images/sprite.png) 30px -90px;
+}
+.leftColumn__menu_settings {
+    left: 474px;
+    border-right: none;
+}
+.leftColumn__menu_settings:hover {
+    left: 474px;
+    border-top-right-radius: 5px;
+    border-right: none;
+}
+.leftColumn__menu_iconSettings {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 14px;
+    top: 18px;
+    background: url(../../../images/sprite.png) 30px -60px;
+}

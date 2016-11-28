@@ -1,0 +1,220 @@
+/* ==========================================================================
+   Statistics
+   ========================================================================== */
+
+   .leftColumn__leftColumn_statistics {
+    width: 283px;
+    height: 436px;
+    border-radius: 5px;
+    position: relative;
+    background: white;
+    z-index:5;
+}
+.leftColumn__leftColumn_statisticsHeader {
+    height: 151px;
+    position: relative;
+    background-image: url("../../../images/graphic.gif");
+    border-radius: 5px 5px 0 0;
+}
+.leftColumn__leftColumn_statisticsGraph {
+    position: absolute;
+    margin-top: 12.5px;
+    left: 18px;
+    width: 100px;
+}
+.leftColumn__leftColumn_statisticsTriangle {
+    width: 0; 
+    height: 0;
+    margin-top: 21px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid white;
+    float: left;
+}
+.leftColumn__leftColumn_statisticsValueBig {
+    font-size: 1.5em;
+    margin-left: 5px;
+    padding-top: -1px;
+    letter-spacing: -1px;
+    word-spacing: -0.5px;
+    color: white;
+    font-family: "OpenSansRegular";
+}
+.leftColumn__leftColumn_statisticsValueSmall {
+    display: block;
+    font-family: "OpenSansRegular";
+    font-size: 0.875em;
+    letter-spacing: -0.5px;
+    word-spacing: -0.5px;
+    color: #98d7ac;
+    clear: left;
+    line-height: 8px;
+    margin-left: 11px;
+}  
+.leftColumn__leftColumn_statisticsInfo {
+    width: 241px;
+    height: 120px;
+    background-color: white;
+    margin-top: 27px;
+    margin-left: 21px;
+    margin-right: 21px;
+    position: absolute;
+}
+.leftColumn__leftColumn_statisticsInfoTime {
+    font-size: 0.75em;
+    font-family: "OpenSansRegular";
+    color: #bab2a9;
+    display: inline-block;
+    padding-bottom: 4px;
+    letter-spacing: -0.8px;
+    word-spacing: 1px;
+}
+.leftColumn__leftColumn_statisticsLowercase {
+    display: inline-block;
+    margin-left: -1.5px;
+    color: #bab2a9;
+    font-size: 0.5em;
+    font-family: "OpenSansRegular";
+}
+.leftColumn__leftColumn_statisticsInfoGeo {
+    font-size: 1.25em;
+    margin: 0px;
+    font-family: "OpenSansRegular";
+    color: #897869;
+    padding-bottom: 16px;
+    margin-top:-8px;
+    letter-spacing: -1px;
+    word-spacing: 0.8px;
+}
+.leftColumn__leftColumn_statisticsTrade {
+    width: 120px;
+    height: 68px;
+    background-color: #f6f0ec;
+    float: left;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+}    
+.leftColumn__leftColumn_statisticsMarket {
+    width: 120px;
+    height: 68px;
+    background-color: #f6f0ec;
+    float: right;
+    border-radius: 0 2px 2px 0;
+    text-align: center;
+}
+.leftColumn__leftColumn_statisticsTradeTitle,
+.leftColumn__leftColumn_statisticsMarketTitle {
+    font-family: 'OpenSansSemiBold';
+    font-size: 1.125em;
+    margin: 0;
+    padding: 0;
+    color: #897869;
+    padding-top: 20px;
+    line-height: 0.8;
+    letter-spacing: -0.5px;
+}
+.leftColumn__leftColumn_statisticsTradeTitle {
+    margin-left: -4px; 
+}
+.leftColumn__leftColumn_statisticsMarketTitle {
+    margin-left: 4px;
+}
+.leftColumn__leftColumn_statisticsTradeText {
+    font-size: 0.813em;
+    color: #a79583;
+    font-family: 'OpenSansSemiBold';
+    padding: 0;
+    margin: 0;
+    letter-spacing: -0.8px;
+    margin-left: -5px;
+    word-spacing: 1px;
+ }
+.leftColumn__leftColumn_statisticsMarketText {
+    font-size:0.813em;
+    margin: 0;
+    padding: 0;
+    color: #a79583;
+    font-family: "OpenSansSemiBold";
+    letter-spacing: -0.8px;
+    margin-left: 3px;
+    word-spacing: 1px;
+}
+.leftColumn__leftColumn_statisticsAapl {
+    position: absolute;
+    left: 21px;
+    bottom: 42px;
+}
+.leftColumn__leftColumn_statisticsAaplGraph{
+    margin: 0;
+    padding: 0;
+}
+.leftColumn__leftColumn_statisticsAaplGraphColWide {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 9px;
+    height: 40px;
+    margin-right: 6px;
+    background-color: #f5f0ec;
+    float: left;
+    position: relative;
+}
+.leftColumn__leftColumn_statisticsAaplGraphCol {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 9px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: #f5f0ec;
+    float: left;
+    position: relative;
+}
+.leftColumn__leftColumn_statisticsAaplBlock {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 9px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+}
+.leftColumn__leftColumn_statisticsAaplOrange {
+    display: block;
+    background-color: #e75e3a;
+    margin-right: 6px;
+}
+.leftColumn__leftColumn_statisticsAaplGreen {
+    display: block;
+    background-color: #4eaf7c;
+    margin-right: 5px;
+}
+.leftColumn__leftColumn_statisticsAaplTitle {
+    font-size: 0.875em;
+    font-family: "OpenSansRegular";
+    color: #a8a197;
+    padding-bottom: 7px;
+    letter-spacing: -0.8px;
+}
+.leftColumn__leftColumn_statisticsYearlyChange .leftColumn__leftColumn_statisticsAaplTitle {
+    margin-left: -1px;
+    word-spacing: 1px;
+}
+.leftColumn__leftColumn_statisticsYearlyChange {
+    position: absolute;
+    right: 21px;
+    bottom: 42px;
+}  
+.leftColumn__leftColumn_statisticsYearlyChangeValue {
+    display: inline-block;
+    width: 94px;
+    height: 40px;
+    line-height: 38px;
+    color: white;
+    background-color: #4eaf7c;
+    text-align: center;
+    border-radius: 3px;
+    font-family: "OpenSansRegular";
+    font-size: 1.125em;
+    letter-spacing: -0.8px;
+}

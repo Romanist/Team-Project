@@ -1,0 +1,343 @@
+/* ==========================================================================
+  Pie chart
+   ========================================================================== */
+
+.chart {
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    margin-top: 75px;
+    margin-left: 27px;
+}
+.doughnutTip { /* pop-up windows*/
+    position: absolute;
+    min-width: 30px;
+    max-width: 100px;
+    padding: 5px 15px;
+    border-radius: 1px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ddd;
+    font-size: 0.625em;
+    text-shadow: 0 1px 0 #000;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: .06em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+.doughnutTip:after {/*marker under pop-up window*/
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    content: "";
+    height: 0;
+    margin: 0 0 0 -6px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.7);
+    line-height: 0;
+}
+.doughnutSummary { /*text in the center*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: default;
+    font-weight: 600;
+}
+.doughnutSummaryTitle {/*upper part*/
+    position: absolute;
+    width: 68px;
+    top: -20px;
+    font-size: 0.813em;
+    right: -22px;
+    top: -30px;
+    color: #e55e3a;
+}
+.doughnutSummaryNumber {/*lower part*/
+    position: absolute;
+    width: 76px;
+    font-size: 32px;
+    color: #8e8071;
+    right: -26px;
+    top: -38px;
+    letter-spacing: -0.8px;
+}
+.chart path:hover { /*change during arrow pointing*/
+    opacity: 0.5;
+    -webkit-animation: pie_animation_hover 0.1s 1 ;
+    cursor: pointer;
+}
+.chart path:active { /*изменение при нажатии*/
+    -webkit-animation: pie_animation_active 0.1s 1;
+}
+@-webkit-keyframes pie_animation_active {
+    0% {  }
+    100% { -webkit-transform: scale(1.05,1.05);}
+}
+@keyframes pie_animation_active {
+    0% { }
+    100% { -webkit-transform: scale(1.05,1.05);}  
+}
+@-webkit-keyframes pie_animation_hover {
+    0% { -webkit-transform: scale(1,1); }
+    100% { -webkit-transform: scale(1,1);}
+}
+.chart_head {
+    height: 110px;
+    width: 308px;
+}
+.chart_tittle {
+    position: absolute;
+    top: 80px;
+    left: 60px; 
+    font-weight: 11px;
+}
+.leftColumn__rightColumn_PieChart {
+    width: 308px;
+    height: 564px;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.leftColumn__rightColumn_PieChart > input {
+    display: none;
+}
+.leftColumn__rightColumn_PieChart > input + label {
+    display: inline-block;
+    position: relative;
+    width: 153px;
+    height: 44px;
+    text-align: center;
+    color: white;
+    font-family: "OpenSansBold";
+    border-radius: 4px 4px 0px 0px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    font-weight: 500;
+    font-size: 0.938em;
+    cursor: pointer;
+}
+.leftColumn__rightColumn_PieChart > input + label p {
+    margin-top: 13px;
+    margin-left: 2px;
+    font-size: 1em;
+    font-family: "OpenSansBold";
+    color: white;
+}
+.leftColumn__rightColumn_PieChart > input + label:not(:first-of-type) {
+    margin-left: -2px;
+}
+.leftColumn__rightColumn_PieChart > input + label:last-of-type::after {
+    display: block;
+    width: 2000px;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 100%;
+    color: #8e8071;
+}
+.leftColumn__rightColumn_PieChart > input:checked + label {
+    border-bottom: none;
+    display: inline-block;
+    width: 149px;
+    height: 45px;
+    text-align: center;
+    background-color: white;
+    color: #8e8071;
+    border-radius: 4px 4px 0px 0px;
+    font-weight: 500;
+    font-size: 0.938em;
+    font-family: "OpenSansBold";
+    cursor: pointer;
+}
+.leftColumn__rightColumn_PieChart > input:checked + label p {
+    margin-top: 13px;
+    margin-left: 7px;
+    font-size: 1em;
+    font-family: "OpenSansBold";
+    color: #8e8071; 
+}
+.leftColumn__rightColumn_PieChart > input:checked + label:last-of-type::after {
+    bottom: 0px;
+    color: #8e8071;
+}
+.leftColumn__rightColumn_PieChart > div {
+    white-space: normal;
+    display: none;
+    margin: 0px;
+}
+.leftColumn__rightColumn_PieChart > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.leftColumn__rightColumn_PieChart > input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+    display: block;
+}
+.leftColumn__rightColumn_PieChart_monthReport {
+    padding-top: 50px;
+}
+.leftColumn__rightColumn_PieChart_pieChart {
+    width: 308px;
+    height: 354px;
+    clear: left;
+    background-color: white;
+    border-radius: 0px 4px 0px 0px;
+    position: relative;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons {
+    width: 308px;
+    height: 166px;
+    background-color: white;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_audio,
+.leftColumn__rightColumn_PieChart_groupOfButtons_video,
+.leftColumn__rightColumn_PieChart_groupOfButtons_photo {
+    width: 102px;
+    height: 82px;
+    float: left;
+    background-color: #f6f0ec;
+    border-top-width: 4px;
+    border-top-style: solid;
+    color: #a09b96;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_audio {
+    border-top-color: #4daf7b;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_video {
+    border-top-color: #e25734;
+    margin-left: 1px;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_photo {
+    border-top-color: #ebc85e;
+    margin-left: 1px;
+}  
+.leftColumn__rightColumn_PieChart_groupOfButtons_uploadFiles, 
+.leftColumn__rightColumn_PieChart_groupOfButtons_shareLink,
+.leftColumn__rightColumn_PieChart_groupOfButtons_backUp {
+    height: 80px;
+    float: left;
+    background-color: #776b5e;
+    color: white; 
+    cursor: pointer;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_uploadFiles {
+    width: 102px;
+    border-radius: 0 0 0 4px;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_uploadFiles:hover,
+.leftColumn__rightColumn_PieChart_groupOfButtons_shareLink:hover,
+.leftColumn__rightColumn_PieChart_groupOfButtons_backUp:hover {
+    height: 80px;
+    float: left;
+    background-color: #64584C;
+    color: white;
+    cursor: pointer;
+    font-size: 0.909em;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_uploadFiles:hover {
+    width: 102px;
+    border-radius: 0 0 0 4px;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_shareLink {
+    width: 103px;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_shareLink:hover {
+    width: 103px;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_backUp {
+    width: 103px;
+    border-radius: 0 0 4px 0;
+} 
+.leftColumn__rightColumn_PieChart_groupOfButtons_backUp:hover {
+    width: 103px;
+    border-radius: 0 0 4px 0;
+}
+.leftColumn__rightColumn_PieChart_percent {
+    font-size: 1.75em;
+    color: #8e8071;
+    margin-top: -22px;
+    margin-left: -4px;
+    font-family:"OpenSansBold";
+    letter-spacing: -0.8px;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_audioText {
+    margin-top: 13px;
+    font-size: 0.938em;
+    font-family:"OpenSansBold";
+} 
+.leftColumn__rightColumn_PieChart_groupOfButtons_videoText {
+    margin-top: 13px;
+    font-size: 0.938em;
+    margin-right: 2px;
+    font-family: "OpenSansBold";
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_photoText {
+    margin-top: 13px;
+    font-size: 0.938em;
+    margin-right: 2px;
+    font-family: "OpenSansBold";
+}
+.leftColumn__rightColumn_PieChart_diagramStatsButtonLettering {
+    margin-top: 13px;
+    margin-left: 7px;
+    font-size: 1em;
+    font-family: "OpenSansBold";
+    color: #8e8071;
+}
+.leftColumn__rightColumn_PieChart_monthReportButtonLettering {
+    margin-top: 13px;
+    margin-left: 2px;
+    font-size: 1em;
+    font-family: "OpenSansBold";
+    color: white;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_uploadFilesSprite {
+    background-image: url('../../../images/sprite.png');
+    background-position: -2px 148px;
+    width: 34px;
+    height: 22px;
+    margin-left: 36px;
+    margin-top: 20px;
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_shareLinkSprite {
+    background-image: url('../../../images/sprite.png');
+    background-position: -2px 56px;
+    width: 28px;
+    height: 25px; 
+    margin-left: 38px;
+    margin-top: 18px;  
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_backUpSprite {
+    background-image: url('../../../images/sprite.png');
+    background-position: -2px -192px;
+    width: 32px;
+    height: 26px;
+    margin-left: 36px;
+    margin-top: 16px;   
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_uploadFilesLettering {
+    padding-top: 8px;
+    font-size: 0.688em;
+    font-family: "OpenSansBold";
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_shareLinkLettering {
+    padding-top: 6px;
+    font-size: 0.688em; 
+    font-family: "OpenSansBold";
+}
+.leftColumn__rightColumn_PieChart_groupOfButtons_backUpLettering {
+    padding-top: 7px; 
+    font-size: 0.688em; 
+    font-family: "OpenSansBold";
+}
+.leftColumn__rightColumn_PieChart_pieChartLettering {
+    position: absolute;
+    left: 96px;
+    top: 37px;
+    color: #8e8071;
+    font-family: "OpenSansBold";
+    font-size: 0.938em;
+    word-spacing: 1px;
+}

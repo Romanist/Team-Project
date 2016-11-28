@@ -1,0 +1,249 @@
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+.rightColumn__formAction {
+    width: 370px;
+    height: 460px;
+    background: #fff;
+    position: relative;
+    color: #8e8071;
+    font-family: "OpenSansRegular";
+    font-size: 0.875em;
+    letter-spacing: -0.5px;
+}
+.rightColumn__formContent .rightColumn__formText_h1 {
+    color: #8e8071;
+    font-size: 16px;
+    padding-left: 1px;
+    margin-bottom: 10px;
+}    
+.rightColumn__formContent {
+    width: 308px;
+    position: absolute;
+    top: 16.5px;
+    margin-right: -154px;
+    right: 50%;
+    height: 318px;
+}
+.rightColumn__formSubmit_insideCheckboxSaveaCopy_labelSaveaCopy {
+    display: block;
+    color: #8E8071;
+    font-size: 1.125em;
+    margin-bottom: 10px;
+}
+.rightColumn__form, .rightColumn__formContent_inputSubject,
+.rightColumn__formContent_inputMessage,
+.rightColumn__formContent_inputContacts_mailHello,
+.rightColumn__formContent_inputContacts_mailAndy { 
+    border-radius: 3px;
+}
+.rightColumn__formContent_contacts {
+    margin-bottom: 20px;
+    width: 100%;
+    position: absolute;
+    border: 0;
+    height: 73px;
+}
+.rightColumn__formContent_subjects {
+    margin-bottom: 23px;
+    padding-top: 3px;
+    width: 100%;
+    position: relative;
+    border: 0;
+    height: 82px;
+
+}
+.rightColumn__formContent_message {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    border: 0;
+    height: 73px;
+}
+.rightColumn__formContent_inputSubject,
+.rightColumn__formContent_inputMessage {
+    width: 100%;
+    border: 1px solid #E5D4C2;
+    box-sizing: border-box;
+    padding-top: 11px;
+    font-family: inherit;
+    padding-left: 15px;
+    letter-spacing: 0px;
+    color: #C4BBB2;
+    resize: none;
+}
+.rightColumn__formContent_inputContacts_mailHello,
+.rightColumn__formContent_inputContacts_mailAndy {
+    height: 36px;
+    width: 124px;
+    border: 0;
+    margin: 5px;
+    background: #5e90af;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: -0.5px;
+    float: left;
+}
+.rightColumn__formInputContacts_mailButton {
+    position: relative;
+    width: 36px; 
+    height: 36px;
+    background: #ede3dd;
+    border-radius: 3px;
+    border: 0;
+    float: left;
+    margin: 5px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.rightColumn__formInputContacts_mailButton_rectangleH,
+.rightColumn__formInputContacts_mailButton_rectangleV {
+    background: #fff;
+    position: absolute;
+    border-radius: 2px;
+}
+div .rightColumn__formContent_inputContacts_mailAndy {
+    width: 120px;
+    margin-left: 0;
+    background: #4daf7b;
+}
+.rightColumn__formInputContacts_mailButton_rectangleH {
+    width: 20px;
+    height: 4px;
+    top: 16px;
+    left: 8px;
+}
+.rightColumn__formInputContacts_mailButton_rectangleV{
+    width: 4px;
+    height: 20px;
+    top: 8px;
+    left: 16px;
+}
+.rightColumn__formContent_inputSubject {
+    height: 48px;
+}
+.rightColumn__formContent_inputMessage {
+    height: 107px;
+    letter-spacing: 0px;
+}
+.rightColumn__formSubmit {
+    width: 370px;
+    height: 88px;
+    background: #F8F3F0;
+    position: absolute;
+    bottom: 0px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.rightColumn__formSubmit_inside {
+    width: 303px;
+    height: 46px;
+    background: #F8F3F0;
+    position: absolute;
+    left: 35px;
+    margin-bottom: -23px;
+    bottom: 50%;
+}
+.rightColumn__formSubmit_insideCheckboxSaveaCopy_labelSaveaCopy {
+    cursor: pointer;
+    color: #8E8071;
+    margin-top: 12px;
+    float: left;
+}
+.rightColumn__formSubmit_insideButton_sendMail {
+    height: 100%;
+    width: 141px;
+    float: right;
+    background: #e96b45;
+    color: #fff;
+    font-size: 1em;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: -0.5px;
+} 
+[id^=Save_a_copy] {
+    display: none;
+}
+[id^=Save_a_copy] + label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ebe2da;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+[id^=Save_a_copy]:checked + label span {
+    position: relative;
+    display: inline-block;
+    margin-left: -4px;
+    margin-bottom: 8px;
+}
+[id^=Save_a_copy]:checked + label span:before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    width: 5px;
+    height: 2.5px;
+    background: #49ad78;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 1px;    
+}
+[id^=Save_a_copy]:checked + label span:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    width: 10px;
+    height: 2.5px;
+    background: #49ad78;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);       
+}
+.rightColumn__formInputContacts_mail {
+    border: 1px solid #E5D4C2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 48px;
+    margin-top: -2px;
+}
+.rightColumn__formSubmit_inside .rightColumn__formText_h1 {
+    color: #8e8071;
+    font-size: 1em;
+    padding-top: 1px;
+    padding-left: 8px;
+    display: inline-block;
+    float: left;
+    word-spacing: -0.5px;
+}
+.rightColumn__formWrapperPlaybtn{
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 35px;
+    right: 139px;
+}
+.rightColumn__formCirclePlaybtn {
+    width: 19px;
+    height: 19px;
+    background: #dd4a2a;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.rightColumn__formTriangleRightPlaybtn {
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 5px solid #fff;
+    border-bottom: 3px solid transparent;
+    position: absolute;
+    top: 6.5px;
+    left: 8.0px;
+}

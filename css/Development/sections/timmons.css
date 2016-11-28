@@ -1,0 +1,120 @@
+/* ==========================================================================
+  Timmons
+   ========================================================================== */
+
+.leftColumn__leftColumn_timmons {
+    width: 283px;
+    height: 312px;
+    background: white;
+    border-radius: 5px;
+}
+.leftColumn__leftColumn_timmonsList {
+    width: 283px;
+    height: 188px;
+    position: relative;
+}
+.leftColumn__leftColumn_timmonsHeader {
+    height: 124px;
+    background: url("../../../images/avatar.png");
+    border-radius: 3px 3px 0 0;
+    position: relative;
+}
+.leftColumn__leftColumn_timmonsInfo {
+    width: 120px;
+    height: 66px;
+    position: absolute;
+    left: 120px;
+    top: 34px;
+}
+.leftColumn__leftColumn_timmonsInfoName {
+    display: block;  
+    color: white;
+    font-size: 1.063em;
+    text-transform: uppercase;
+    font-family: "OpenSansBold";
+    font-weight: 700;
+    margin: 0px;
+    margin-top: -3px;
+    margin-right: -1px;
+    line-height: 16px;
+}
+.leftColumn__leftColumn_timmonsInfoFollow {
+    font-size: 0.813em;
+    font-family: "OpenSansRegular";
+    font-weight: 700;
+    color: #7d7266;
+    letter-spacing: -0.8px;
+    margin-left: 3px;
+    line-height: 31px;
+}
+.leftColumn__leftColumn_timmonsNav {
+    padding:0;
+    margin:0;
+}
+.leftColumn__leftColumn_timmonsNavRow {
+   list-style-type: none;
+   display: block;
+   color: #8e8071;
+   height: 49px;
+   line-height: 49px;
+   padding-left: 21px;
+   font-size: 0.938em;
+   letter-spacing: -0.8px;
+   position: relative;
+   font-family: "OpenSansRegular";
+   margin: auto;
+}
+.leftColumn__leftColumn_timmonsNavRow:first-child:hover {
+   border-top: 4px solid #f8f3f0; 
+}
+.leftColumn__leftColumn_timmonsNavRow:last-child:hover {
+   border-bottom: 4px solid #f8f3f0; 
+}
+.leftColumn__leftColumn_timmonsNavRow:hover {
+   background-color: #f8f3f0;
+   border-left:3px solid #4daf7b;
+   height: 41px;
+   line-height: 41px;
+   border-top: 4px solid white;
+   border-bottom: 4px solid white;
+}
+.leftColumn__leftColumn_timmonsNavRow:last-child:hover {
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+.leftColumn__leftColumn_timmonsUser,
+.leftColumn__leftColumn_timmonsWeb,
+.leftColumn__leftColumn_timmonsSett,
+.leftColumn__leftColumn_timmonsEvents {
+   width: 20px;
+   height: 20px;
+   background: url("../../../images/sprite.png"); 
+   position: absolute;
+   top: 10px;
+   right: 16px; 
+}
+.leftColumn__leftColumn_timmonsUser {
+   background-position: -35px -40px;
+   top:13px;
+}
+.leftColumn__leftColumn_timmonsWeb {
+   background-position: -130px -6px;
+}
+.leftColumn__leftColumn_timmonsSett {
+   background-position: -71px -36px;
+}
+.leftColumn__leftColumn_timmonsEvents {
+   background-position: -5px -71px;
+}
+.leftColumn__leftColumn_timmonsNavRow:hover .leftColumn__leftColumn_timmonsUser {
+   background-position: -34px -101px;
+}
+.leftColumn__leftColumn_timmonsNavRow:hover .leftColumn__leftColumn_timmonsWeb {
+   background-position:-68px -5px;
+}
+.leftColumn__leftColumn_timmonsNavRow:hover .leftColumn__leftColumn_timmonsSett {
+   background-position: -64px -100px;
+}
+.leftColumn__leftColumn_timmonsNavRow:hover .leftColumn__leftColumn_timmonsEvents {
+   background-position: -95px -100px;
+}

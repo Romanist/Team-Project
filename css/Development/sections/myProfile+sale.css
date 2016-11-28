@@ -1,0 +1,272 @@
+/* ==========================================================================
+   My Profile
+   ========================================================================== */
+
+.leftColumn__rightColumn_myProfile {
+    margin-top: 49px;
+    width: 304px;
+    height: 172px;
+    position: relative;
+} 
+.leftColumn__rightColumn_myProfileMenu {
+    width: 304px;
+    height: 65px;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+}
+.leftColumn__rightColumn_myProfileMenu_myProfile {
+    display: block;
+    width: 176px;
+    height: 65px;
+    border-right: 1px solid #F6F0EC;
+    cursor: pointer;
+    position: absolute;
+} 
+.leftColumn__rightColumn_myProfileMenu_myProfile:hover {
+    display: block;
+    width: 176px;
+    height: 62px;
+    border-bottom: 3px solid rgb(77, 175, 123);
+    border-right: 1px solid #F6F0EC;
+    cursor: pointer;
+    position: absolute;
+    border-top-left-radius: 5px;
+    background: #F8F3F0;
+}        
+.leftColumn__rightColumn_myProfileMenu_textMyProfile {
+    color: #8E8071;
+    font-size: 0.938em;
+    position: absolute;
+    font-family: "OpenSansBold";
+    left: 59px;
+    top: 22.5px;
+    letter-spacing: -0.8px;
+} 
+.leftColumn__rightColumn_myProfileMenu_imageMyProfile {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: 19px;
+    top: 19px;
+    background :url(../../../images/sprite.png) -30px -65px;
+}  
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    width: 176px;
+    height: 107px;
+    list-style: none;
+    position: absolute;
+    top: 65px;
+    background: white;
+} 
+.leftColumn__rightColumn_myProfileMenu_myProfile:hover .leftColumn__rightColumn_myProfileMenu_myProfile_Submenu {
+    display: block;
+} 
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_inviteFriends,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_findFriends,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_logOut {
+    position: absolute;
+    width: 174px;
+    height: 35px;
+    border-bottom: 1px solid #F6F0EC;
+}
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_inviteFriends:hover,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_findFriends:hover,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_logOut:hover {
+    position: absolute;
+    width: 174px;
+    height: 35px;
+    border-bottom: 1px solid #F6F0EC;
+    background: #F8F3F0;
+    border-left: 3px solid rgb(77, 175, 123);
+    box-sizing:border-box;
+}
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_findFriends,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_findFriends:hover {
+    top: 36px;
+}
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_logOut,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_logOut:hover {
+    top: 72px;
+    border-bottom: none;
+}
+ 
+.leftColumn__rightColumn_myProfileMenu_edit {
+    display: block;
+    left: 177px;
+    width: 127px;
+    height: 65px;
+    cursor: pointer;
+    position: absolute;
+}
+.leftColumn__rightColumn_myProfileMenu_edit:hover {
+    display: block;
+    left: 177px;
+    width: 127px;
+    height: 62px;
+    cursor: pointer;
+    position: absolute;
+    background: #F8F3F0;
+    border-top-right-radius: 5px;
+    border-bottom: 3px solid rgb(77, 175, 123);
+} 
+.leftColumn__rightColumn_myProfileMenu_textEdit {
+    color: #8E8071;
+    display: block;
+    font-size: 0.938em;
+    position: absolute;
+    font-family: "OpenSansBold";
+    left: 64px;
+    top: 22.5px;
+    letter-spacing: -0.8px;
+}   
+.leftColumn__rightColumn_myProfileMenu_imageEdit {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: 24px;
+    top: 19px;
+    background: url(../../../images/sprite.png) -60px -65px;
+} 
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 127px;
+    height: 107px;
+    list-style: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background: white;
+    z-index: 6;
+}
+.leftColumn__rightColumn_myProfileMenu_edit:hover .leftColumn__rightColumn_myProfileMenu_edit_Submenu {
+    display: block;
+} 
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_newProfile,
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_editProfile,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_Clear {
+    position: absolute;
+    width: 124px;
+    height: 35px;
+    border-bottom: 1px solid #F6F0EC;
+}
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_newProfile:hover,
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_editProfile:hover,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_Clear:hover {
+    position: absolute;
+    width: 124px;
+    height: 35px;
+    border-bottom: 1px solid #F6F0EC;
+    background: #F8F3F0;
+    border-left: 3px solid rgb(77, 175, 123);
+}
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_editProfile,
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_editProfile:hover {
+    top: 36px;
+}
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_Clear,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_Clear:hover {
+    top: 72px;
+    border-bottom: none;
+}
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_textInviteFriends,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_textFindFriends,
+.leftColumn__rightColumn_myProfileMenu_myProfile_Submenu_textLogOut {
+    color: #8E8071;
+    font-size: 0.938em;
+    font-family: "OpenSansBold";
+    margin-left: 25px;
+    margin-top: 7px;
+}
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_textNewProfile,
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_textEditProfile,
+.leftColumn__rightColumn_myProfileMenu_edit_Submenu_textClear {
+    color: #8E8071;
+    font-size: 0.938em;
+    font-family: "OpenSansBold";
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+/* ==========================================================================
+   Sale
+   ========================================================================== */
+
+.leftColumn__rightColumn_myProfileSale {
+    width: 70px;
+    height: 74px;
+    position: absolute;
+    left: 223px;
+    top: 100px;
+    z-index: 5;
+    cursor: pointer;
+}
+.leftColumn__rightColumn_myProfileMenu_edit:hover + .leftColumn__rightColumn_myProfileSale {
+    left: 20px;
+    transition: left 0.5s ease;
+}      
+.leftColumn__rightColumn_myProfileSale_background {
+    width: 67px;
+    height: 74px;
+    background: white;
+    border-radius: 5px;
+}
+.leftColumn__rightColumn_myProfileSale_saleFlag {
+    border-top: 25px solid #4daf7c;
+    border-left: 8px solid #fff;
+    border-bottom: 25px solid #4daf7c;
+    border-right: 0px;
+    width: 51.5px;
+    position: absolute;
+    top: 13px;
+    left: 6px;
+}
+.leftColumn__rightColumn_myProfileSale_flagBase {
+    width: 5px;
+    height: 50px;
+    background: #66ba8f;
+    position: absolute;
+    top: 13px;
+    left: 65px;
+}
+.leftColumn__rightColumn_myProfileSale_flagTriangleTop {
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid #359c66; 
+    border-right: 3px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: 67px;
+}
+.leftColumn__rightColumn_myProfileSale_flagTriangleBottom{
+    width: 0;
+    height: 0;
+    border-top: 3px solid #359c66; 
+    border-right: 3px solid transparent;
+    position: absolute;
+    top: 63px;
+    left: 67px;
+}
+.leftColumn__rightColumn_myProfileSale_text {
+    font-family: "OpenSansBold";
+    font-size:0.781em;
+    color: #c4f3df;
+    position: absolute;
+    top: 14px;
+    left: 24px;
+}
+.leftColumn__rightColumn_myProfileSale_textDiscount {
+    font-family: "OpenSansBold";
+    font-weight: bold;
+    letter-spacing:0.5px;
+    font-size: 1.031em;
+    color: #fff;
+    position: absolute;
+    top: 22px;
+    left: 22.5px;
+} 

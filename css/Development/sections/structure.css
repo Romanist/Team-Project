@@ -1,0 +1,109 @@
+ /* ==========================================================================
+   Structure
+   ========================================================================== */
+.soon__to_remove {
+    width:1227px;
+    height:1248px;
+    background:url(../../../metro.png);
+    opacity:0.3;
+    position:absolute;
+    top:0px;
+}   
+.wrapper {
+    padding-top: 100px;
+    width: 1227px;
+    height: 1248px;
+    background: url(../../../images/background.png) no-repeat;
+    position: relative;
+}
+.header {
+    margin: 0 auto;
+    width: 700px;
+    height: 100px;
+    font-size: 60px;
+    font-family: "28DaysLater";
+    text-align: center;
+    vertical-align: middle;
+    animation: header 15s 1 ease;
+    -webkit-animation: header 15s 1 ease;
+    -moz-animation: header 15s 1 ease;
+}
+@keyframes header {
+    0% {font-size: 300%;};
+    50% {font-size: 150%;};
+    100% {font-size: 300%;};
+}
+@-webkit-keyframes header {
+    0% {font-size: 300%;};
+    50% {font-size: 150%;};
+    100% {font-size: 300%;};
+}
+@-moz-keyframes header {
+    0% {font-size: 300%;};
+    50% {font-size: 150%;};
+    100% {font-size: 300%;};
+}
+.leftColumn {
+    margin-top: 51px;
+    margin-left: 93px;
+    background: gray;
+    float: left;
+    width: 631px;
+    height: 892px;
+}
+.rightColumn {
+    margin-top: 51px;
+    margin-left: 40px;
+    background: darkgray;
+    float: left;
+    width: 370px;
+    height: 892px;
+}
+.rightColumn__comments {
+    background: salmon;
+    width: 370px;
+    height: 392px;
+}
+.rightColumn__form {
+    margin-top: 40px;
+    background: pink;
+    width: 370px;
+    height: 460px;
+}
+.leftColumn__leftColumn {
+    margin-top: 40px;    
+    width: 283px;
+    height: 788px;
+    float: left;
+    background: purple;
+}
+.leftColumn__rightColumn {
+    margin-top: 40px; 
+    margin-left: 40px;
+    width: 308px;
+    height: 564px;
+    float: left;
+    background: green;
+}
+.leftColumn__leftColumn_statistics {
+    background: yellow;
+    width: 283px;
+    height: 436px;
+}
+.leftColumn__leftColumn_timmons {
+    margin-top: 40px;
+    background: yellow;
+    width: 283px;
+    height: 312px;
+}
+.leftColumn___rightColumn_pieChart {
+    background: yellow;
+    width: 308px;
+    height: 564px;
+}
+.leftColumn__rightColumn_myProfile {
+    margin-top: 49px;
+    background: yellow;
+    width: 304px;
+    height: 172px;
+}
